@@ -44,7 +44,9 @@ function handleProgress() {
   }
 
   function handleFullScreen() {
-    console.log('clicked');
+    if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      }
   }
 
 // event listeners
