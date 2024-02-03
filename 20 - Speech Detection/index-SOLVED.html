@@ -23,7 +23,7 @@
         const transcript = Array.from(e.results)
           .map((result) => result[0])
           .map((result) => result.transcript)
-          .join('');
+          .join("");
 
         p.textContent = transcript;
         if (e.results[0].isFinal) {
@@ -32,7 +32,6 @@
         }
 
         // this can be hooked up to other functions or applications (ex to get weather resulting in an hands off app that performs whatever actions you want)
-        console.log(transcript);
       });
 
       recognition.addEventListener("end", recognition.start);
